@@ -1,3 +1,0 @@
-                     saved E:\Cerebellumprj\code_suit_tool\CONN_autorecovery_project_18-Nov-2024-15-30-56.mat
-                     CONN has been closed unexpectedly
-                     Autorecovery project created at E:\Cerebellumprj\code_suit_tool\CONN_autorecovery_project_18-Nov-2024-15-30-56.mat
