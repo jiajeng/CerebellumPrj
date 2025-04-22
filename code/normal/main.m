@@ -1,0 +1,4 @@
+step1_convert2nii;
+step2_GetFile2Local;
+step3_conn_prep;
+step4_SPM_analysis;
