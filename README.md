@@ -1,5 +1,5 @@
 # Cerebellum Project
-## step 0 check data from NAS(120.126.102.101)
+## step 0 check data from NAS(120.xxx.xxx.xxx)
 #### **行為資料路徑** --> /LabData/cerebellum_NYCU/rawdata/date_SUBxxx/
 - *行為資料 --> /BEHAV/word/ or /BEHAV*     
 - *檔案  --> sub-xxx_task_wordread.csv(.mat)*
