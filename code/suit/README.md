@@ -1,7 +1,5 @@
 # Work steps
-![image](https://github.com/user-attachments/assets/f59af1be-78f5-40b2-b81c-eee60cd6feff)
-
-
+![image](https://github.com/user-attachments/assets/e4bd7c81-f994-4a26-a9b5-87acabb8e039)
 
 - open conn first to load some enviroment variable from CONN  
 
