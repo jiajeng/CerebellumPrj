@@ -2,7 +2,8 @@
 ## content   
 [check data](#checkdata)  
 [DataProcess](#dataprocess)  
-    
+[Result Folder](#Result)
+     
 ## <a name="checkdata"></a> check data from NAS(120.xxx.xxx.xxx)
 #### **行為資料路徑** --> /LabData/cerebellum_NYCU/rawdata/date_SUBxxx/
 - *行為資料 --> /BEHAV/word/ or /BEHAV*     
@@ -48,20 +49,35 @@
   
 - rest : connectivity (ROI define by task)
   ROI define in MNI space, so need to get every subject native space ROI coordinate
-  how? get every subject affine matrix(native space to MNI space), it will save in T1 preprocessing file mc_*_snc.mat, variable Affine
+  how? get every subject affine matrix(native space to MNI space), it will save in T1 preprocessing file mc_*_snc.mat, variable `Affine`
   
 ### normalize and smooth
 - normalize to MNI(for whole brain) and SUIT(only for cerebellum)
-  
+    ###### normalize to MNI 的結果有把小腦的部分給切掉(mask out), 所以在結果上是不會有小腦的結果的。
+    
 ### 2nd level
 task : flexible ANOVA for smooth file (47 subject, remove sub01, sub35, sub50)
 ![image](https://github.com/user-attachments/assets/b3d79ddd-614a-4c7d-8b53-306c47e603d8)
-   
+    
 rest : one sample T and pair T (47 subject, remove sub01, sub35, sub36)
 ![image](https://github.com/user-attachments/assets/0a615284-d042-4dd7-8d3e-c3d74c3322e5)
 ![image](https://github.com/user-attachments/assets/0117f515-22e5-4561-a1eb-bc496659a268)
+  
+  
+## <a name="Result"></a> Result Folder
+#### Nas
+- basedir : `/LabData/jeng/Cerebellum_suit/ProcessData/2nd_level`
+     
+- ROI_coordinate : `./ROI_cor.txt`
+     
+- task : `./sub48/WORD_FANOVA/MNI` --> whole brain
+- &ensp;&ensp;&ensp;&ensp;&ensp;`./sub48/WORD_FANOVA/SUIT` --> cerebellum
+   
+- Rest(one sample t) : `./sub48/OnesmpT_REST` --> brain
+- Rest(one sample t) : `./sub48/OnesmpT_REST_suit` --> cerebellum
+  
+- Rest(Pair t) : `./sub48/PairT_REST` --> brain
+- Rest(Pair t) : `./sub48/PairT_REST_suit` --> cerebellum
 
-
-    
   
 
