@@ -33,23 +33,23 @@
 
      
   
-## <a name="dataprocess"></a> Data Process(SUIT) [function step info](./code/suit/README.md)
-![image](https://github.com/user-attachments/assets/e4bd7c81-f994-4a26-a9b5-87acabb8e039)
+## <a name="dataprocess"></a> Data Process(SUIT) [function step info](./code/suit/README.md)  
+![image](https://github.com/user-attachments/assets/e4bd7c81-f994-4a26-a9b5-87acabb8e039)  
 
-### preprocessing
-- structure : segmentation
-- functional : realign, slice Timing, outlier detection, corigester to structure, denoise (conn toolbox)
+### preprocessing  
+- structure : segmentation  
+- functional : realign, slice Timing, outlier detection, corigester to structure, denoise (conn toolbox)  
      
-> [!Note]
-> 不做normalize and smooth，為了不讓visual cortex的資料影響到小腦的位置
+> [!Note]  
+> 不做normalize and smooth，為了不讓visual cortex的資料影響到小腦的位置 
   
-### first level
-- task : define condition for images (PPI analysis)
-![image](https://github.com/user-attachments/assets/f09f7d03-1faa-47ff-b703-df6ca2a31f13)
-  
-- rest : connectivity (ROI define by task)
-  ROI define in MNI space, so need to get every subject native space ROI coordinate
-  how? get every subject affine matrix(native space to MNI space), it will save in T1 preprocessing file mc_*_snc.mat, variable `Affine`
+### first level  
+- task : define condition for images (PPI analysis)  
+![image](https://github.com/user-attachments/assets/f09f7d03-1faa-47ff-b703-df6ca2a31f13)  
+    
+- rest : connectivity (ROI define by task)   
+  ROI define in MNI space, so need to get every subject native space ROI coordinate    
+  how? get every subject affine matrix(native space to MNI space), saved in T1 preprocessing file mc_*_snc.mat, variable `Affine`   
   
 ### normalize and smooth
 - normalize to MNI(for whole brain) and SUIT(only for cerebellum)
