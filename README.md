@@ -70,14 +70,12 @@ rest : one sample T and pair T (47 subject, remove sub01, sub35, sub36)
      
 - ROI_coordinate : `./ROI_cor.txt`
      
-- task : `./sub48/WORD_FANOVA/MNI` --> whole brain
-- &ensp;&ensp;&ensp;&ensp;&ensp;`./sub48/WORD_FANOVA/SUIT` --> cerebellum
+- task : `./sub46/WORD/MNI` --> whole brain
+- &ensp;&ensp;&ensp;&ensp;&ensp;`./sub48/WORD/SUIT` --> cerebellum
    
 - Rest(one sample t) : `./sub48/OnesmpT_REST` --> brain
 - Rest(one sample t) : `./sub48/OnesmpT_REST_suit` --> cerebellum
+- Rest(one sample t) : `./sub48/OnesmpT_REST_wholeBrain` --> include brain and cerebellum
   
-- Rest(Pair t) : `./sub48/PairT_REST` --> brain
-- Rest(Pair t) : `./sub48/PairT_REST_suit` --> cerebellum
-
   
 
