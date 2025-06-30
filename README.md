@@ -56,10 +56,11 @@
     ###### normalize to MNI 的結果有把小腦的部分給切掉(mask out), 所以在結果上是不會有小腦的結果的。
     
 ### 2nd level
-task : flexible ANOVA for smooth file (47 subject, remove sub01, sub35, sub50)
+##### 46 subject, remove sub001, sub007, sub024, sub035, sub036, sub50 (behave outlier, no rest or word, bad data)
+task : flexible ANOVA for smooth file
 ![image](https://github.com/user-attachments/assets/b3d79ddd-614a-4c7d-8b53-306c47e603d8)
     
-rest : one sample T and pair T (47 subject, remove sub01, sub35, sub36)
+rest : one sample T and pair T
 ![image](https://github.com/user-attachments/assets/0a615284-d042-4dd7-8d3e-c3d74c3322e5)
 ![image](https://github.com/user-attachments/assets/0117f515-22e5-4561-a1eb-bc496659a268)
   
