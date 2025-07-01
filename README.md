@@ -44,7 +44,7 @@
 > 不做normalize and smooth，為了不讓visual cortex的資料影響到小腦的位置 
   
 ### first level  
-- task : define condition for images (PPI analysis)  
+- task : define condition for images (PPI analysis?)  
 ![image](https://github.com/user-attachments/assets/f09f7d03-1faa-47ff-b703-df6ca2a31f13)  
     
 - rest : connectivity (ROI define by task)   
